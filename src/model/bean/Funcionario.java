@@ -1,4 +1,4 @@
-package entities;
+package model.bean;
 
 public class Funcionario extends Usuario {
 
@@ -39,12 +39,5 @@ public class Funcionario extends Usuario {
 	public void setRg(String rg) {
 		this.rg = rg;
 	}
-
-	@Override
-	public String toString() {
-		return "Funcionario [getNome()=" + getNome() + ", getCpf()=" + getCpf() + ", getRg()=" + getRg()
-				+ ", getCodigo()=" + getCodigo() + ", getLogin()=" + getLogin() + ", getSenha()=" + getSenha() + "]";
-	}
-
 
 }

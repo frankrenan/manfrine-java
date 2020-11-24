@@ -1,8 +1,11 @@
-package entities;
+package model.bean;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Produto {
+
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
 	private int codigo;
 	private String descricao;
@@ -49,6 +52,12 @@ public class Produto {
 
 	public void setValidade(Date validade) {
 		this.validade = validade;
+	}
+
+	@Override
+	public String toString() {
+		return "\nDescricao do Produto: " + descricao + "\nQuantidade: " + quantidade + "\nValidade: "
+				+ sdf.format(validade);
 	}
 
 }
